@@ -5,16 +5,17 @@
     "LLM_name": "Gemini",
     "model_family": "Gemini",
     "model_version": null,
-    "LLM_Input": null,
+    "LLM_Input": "Compare Stephen Curry and LeBron James during the 2015–16 NBA regular season using the supplied statistics.\n\nAnalyze scoring efficiency, estimated assist and rebounding rates, offensive usage, and estimated overall contribution. Explain that AST% and TRB% are not per-game averages and that BPM is not actual on-court plus-minus. Support your comparison with specific numbers. Use only the supplied data. Write 150–200 words.\n\nPlayer | TS% | AST% | TRB% | USG% | BPM | WS/48\nStephen Curry | 66.9% | 33.7% | 8.6% | 32.6% | +11.9 | .318\nLeBron James | 58.8% | 36.0% | 11.8% | 31.4% | +9.0 | .242\n\nDefinitions:\nTS% = true shooting percentage.\nAST% = estimated percentage of teammates’ field goals assisted while on the court.\nTRB% = estimated percentage of available rebounds collected while on the court.\nUSG% = estimated percentage of team possessions used while on the court.\nBPM = Box Plus/Minus, a box-score-based estimate of contribution per 100 possessions relative to an average player.\nWS/48 = win shares per 48 minutes.\n\nSource: Advanced.csv from NBA Stats (1947–present).",
     "LLM_output": "During the 2015–16 regular season, Stephen Curry demonstrated superior scoring efficiency and overall impact, while LeBron James led in playmaking and rebounding rates.\n\nCurry posted a remarkably efficient 66.9% TS%, outscoring James (58.8% TS%), driven by historic perimeter shooting. James recorded higher playmaking and rebounding rates with a 36.0% AST% and 11.8% TRB%, compared to Curry’s 33.7% AST% and 8.6% TRB%. Crucially, AST% and TRB% do not represent per-game averages; rather, they estimate the percentage of teammates' field goals assisted and available rebounds grabbed while a player is active on the court.\n\nDespite operating with nearly identical offensive usage (Curry’s 32.6% USG% vs. James’s 31.4% USG%), Curry surpassed James in overall estimated contribution, leading in both BPM (+11.9 to +9.0) and WS/48 (.318 to .242). It is important to note that BPM is not an actual on-court plus-minus metric measured directly from game play; instead, it is a box-score-based estimate of a player's net impact per 100 possessions relative to an average NBA player. Overall, the statistics reflect Curry’s unprecedented efficiency alongside James’s versatile playmaking and rebounding.",
     "intended_prompt_reference": "Complete prompt 1 supplied in project chat on 2026-10-08 immediately before this collection.",
-    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "input_status": "User confirmed on 2026-10-08 that the complete supplied prompt was pasted exactly, including statistics.",
     "received_date": "2026-10-08",
     "generation_date": null,
     "collection_method": "User pasted responses and identified Gemini as their source.",
     "word_count_whitespace": 177,
-    "status": "pilot_pending_input_confirmation",
-    "use_for_final_evaluation": false
+    "status": "pilot_input_confirmed",
+    "use_for_final_evaluation": false,
+    "input_confirmation_date": "2026-10-08"
   },
   {
     "prompt_id": "gemini_pilot_002",
@@ -22,16 +23,17 @@
     "LLM_name": "Gemini",
     "model_family": "Gemini",
     "model_version": null,
-    "LLM_Input": null,
+    "LLM_Input": "Compare the individual player profiles of the Milwaukee Bucks and Brooklyn Nets during the 2020–21 NBA regular season using the supplied player rows.\n\nUse minutes played, true shooting percentage (TS%), usage percentage (USG%), assist percentage (AST%), total rebound percentage (TRB%), and Box Plus/Minus (BPM). Focus on the three players with the most minutes for each team, listed below.\n\nDiscuss how their statistical profiles differ. Do not add or average player percentages to claim team-level efficiency, and do not treat these six players as the complete rosters. Use only the supplied data, without referring to injuries or playoff results. Write 150–200 words.\n\nPlayer | Team | Minutes | TS% | USG% | AST% | TRB% | BPM\nKhris Middleton | Milwaukee | 2269 | 58.8% | 25.0% | 23.2% | 9.4% | +1.3\nGiannis Antetokounmpo | Milwaukee | 2013 | 63.3% | 32.5% | 28.7% | 17.5% | +9.0\nJrue Holiday | Milwaukee | 1907 | 59.2% | 22.2% | 26.3% | 7.4% | +3.4\nJoe Harris | Brooklyn | 2141 | 66.3% | 16.2% | 8.4% | 6.4% | +0.4\nKyrie Irving | Brooklyn | 1886 | 61.4% | 30.4% | 28.6% | 7.5% | +5.5\nJeff Green | Brooklyn | 1835 | 62.4% | 15.6% | 7.8% | 7.9% | -0.8\n\nMinutes are season totals. AST% and TRB% are estimated rates, not per-game averages. BPM is a box-score-based estimate, not actual on-court plus-minus. Selection is based on minutes played, not reputation or a ranking of the best players.\n\nSource: Advanced.csv from NBA Stats (1947–present).",
     "LLM_output": "During the 2020–21 regular season, the top three workload leaders for Milwaukee (Khris Middleton, Giannis Antetokounmpo, Jrue Holiday) and Brooklyn (Joe Harris, Kyrie Irving, Jeff Green) displayed distinct distribution patterns across scoring efficiency, playmaking, and rebounding.\n\nMilwaukee’s trio featured broad responsibility across all three core contributors. Antetokounmpo led the set in usage (32.5% USG%), rebounding (17.5% TRB%), playmaking (28.7% AST%), scoring efficiency (63.3% TS%), and box-score impact (+9.0 BPM). Middleton (2269 minutes) and Holiday (1907 minutes) provided high complementary secondary creation (23.2% and 26.3% AST%) while remaining efficient (58.8% and 59.2% TS%) with positive BPMs (+1.3 and +3.4).\n\nConversely, Brooklyn’s profile relied heavily on central creation from Irving alongside low-usage off-ball efficiency from Harris and Green. Irving shouldered the highest offensive load for Brooklyn (30.4% USG%, 28.6% AST%, +5.5 BPM). Meanwhile, Harris (2141 minutes) and Green (1835 minutes) focused on low-usage play (16.2% and 15.6% USG%) and lower playmaking (8.4% and 7.8% AST%), yet delivered remarkable efficiency (66.3% and 62.4% TS%). Rebounding rates across Brooklyn's trio remained consistently low (6.4% to 7.9% TRB%).",
     "intended_prompt_reference": "Complete prompt 2 supplied in project chat on 2026-10-08 immediately before this collection.",
-    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "input_status": "User confirmed on 2026-10-08 that the complete supplied prompt was pasted exactly, including statistics.",
     "received_date": "2026-10-08",
     "generation_date": null,
     "collection_method": "User pasted responses and identified Gemini as their source.",
     "word_count_whitespace": 173,
-    "status": "pilot_pending_input_confirmation",
-    "use_for_final_evaluation": false
+    "status": "pilot_input_confirmed",
+    "use_for_final_evaluation": false,
+    "input_confirmation_date": "2026-10-08"
   },
   {
     "prompt_id": "gemini_pilot_003",
@@ -39,15 +41,16 @@
     "LLM_name": "Gemini",
     "model_family": "Gemini",
     "model_version": null,
-    "LLM_Input": null,
+    "LLM_Input": "Analyze Michael Jordan’s role on the Chicago Bulls during the 1995–96 NBA regular season using the supplied advanced statistics for Jordan and his teammates.\n\nCompare true shooting percentage (TS%), usage percentage (USG%), assist percentage (AST%), Box Plus/Minus (BPM), and win shares (WS). Use minutes played to provide context for differences in playing time.\n\nExplain what these measures suggest about Jordan’s offensive responsibilities and estimated contribution. Distinguish scoring efficiency from scoring volume: this data does not provide points per game. Explain why these statistics cannot establish how the Bulls would have performed without him. Use only the supplied data. Write 150–200 words.\n\nPlayer | Minutes | TS% | USG% | AST% | BPM | WS\nMichael Jordan | 3090 | 58.2% | 33.3% | 21.2% | +10.5 | 20.4\nScottie Pippen | 2825 | 55.1% | 24.4% | 25.2% | +6.3 | 12.3\nToni Kukoč | 2103 | 58.9% | 21.4% | 21.0% | +5.4 | 10.1\nDennis Rodman | 2088 | 50.1% | 10.3% | 10.0% | 0.0 | 6.2\nSteve Kerr | 1919 | 66.3% | 12.9% | 14.1% | +3.4 | 8.3\nRon Harper | 1886 | 52.8% | 14.9% | 15.5% | +2.6 | 6.3\nLuc Longley | 1641 | 51.5% | 17.8% | 10.6% | -1.6 | 3.5\nBill Wennington | 1065 | 51.9% | 16.5% | 6.4% | -3.2 | 2.8\nJud Buechler | 740 | 55.2% | 17.3% | 11.1% | +1.7 | 2.3\nDickey Simpkins | 685 | 53.3% | 16.7% | 7.7% | -3.7 | 1.2\nRandy Brown | 671 | 43.6% | 16.0% | 15.1% | -0.2 | 1.5\nJason Caffey | 545 | 47.4% | 19.4% | 6.3% | -7.1 | 0.4\nJames Edwards | 274 | 40.3% | 22.9% | 5.9% | -12.2 | -0.2\nJohn Salley | 191 | 41.1% | 13.8% | 10.2% | -2.8 | 0.2\nJack Haley | 7 | 36.3% | 49.6% | 0.0% | -22.4 | 0.0\n\nMinutes and win shares are season totals. TS% measures scoring efficiency; USG% estimates possession usage, not points scored. AST% is an estimated assist rate, not assists per game. BPM is a box-score-based estimate, not actual on-court plus-minus. Account for very small samples when interpreting extreme values.\n\nSource: Advanced.csv from NBA Stats (1947–present).",
     "LLM_output": "During the 1995–96 regular season, Michael Jordan led the Chicago Bulls across workload and individual contribution metrics, logging a team-high 3090 minutes while maintaining a dominant 33.3% USG%, +10.5 BPM, and 20.4 WS.\n\nJordan’s 58.2% TS% highlights strong scoring efficiency relative to high usage, though Steve Kerr (66.3% TS% in 1919 minutes) and Toni Kukoč (58.9% TS% in 2103 minutes) achieved higher efficiency on considerably lower usage (12.9% and 21.4% USG%). Crucially, TS% and USG% measure efficiency and possession usage rather than scoring volume, as this dataset does not include points per game. Playmaking duties were shared, with Scottie Pippen leading in assist rate (25.2% AST% in 2825 minutes), followed closely by Jordan (21.2% AST%) and Kukoč (21.0% AST%). Extreme outlier figures, such as Jack Haley’s 49.6% USG% and -22.4 BPM, reflect small sample noise across 7 minutes.\n\nWhile Jordan's superior metrics demonstrate his individual productivity, these statistics reflect performance within the Bulls' specific system and roster environment; they cannot establish counterfactual team performance in his absence.",
     "intended_prompt_reference": "Complete prompt 3 supplied in project chat on 2026-10-08 immediately before this collection.",
-    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "input_status": "User confirmed on 2026-10-08 that the complete supplied prompt was pasted exactly, including statistics.",
     "received_date": "2026-10-08",
     "generation_date": null,
     "collection_method": "User pasted responses and identified Gemini as their source.",
     "word_count_whitespace": 167,
-    "status": "pilot_pending_input_confirmation",
-    "use_for_final_evaluation": false
+    "status": "pilot_input_confirmed",
+    "use_for_final_evaluation": false,
+    "input_confirmation_date": "2026-10-08"
   }
 ]
