@@ -1,0 +1,11 @@
+# Prompt 2: Milwaukee Bucks vs. Brooklyn Nets player profiles, 2020-21 regular season
+
+Prompt: "Compare the individual player profiles of the Milwaukee Bucks and Brooklyn Nets during the 2020-21 NBA regular season using the supplied player rows."
+
+**Team-level picture.** The supplied rows cover 22 Bucks players and 27 Nets players, with nearly the same total minutes (about 17,300 versus 17,400). Their combined Win Shares were close, 48.0 for Milwaukee and 46.5 for Brooklyn. Combined VORP was 14.1 versus 13.2. On these measures the two rosters produced similar totals, but they got there in different ways.
+
+**Milwaukee: one superstar plus a stable rotation.** Giannis Antetokounmpo was the centerpiece: PER 29.2, TS% .633, usage 32.5% and Box Plus/Minus 9.0, producing 10.2 Win Shares in only 61 games. Jrue Holiday (6.6 WS, BPM 3.4) and Khris Middleton (6.4 WS, 2,269 minutes, the team's highest) formed a solid second tier. Brook Lopez (PER 15.4, TS% .611) and Bobby Portis (PER 19.9, 4.8 WS in 1,372 minutes) filled out the frontcourt, and Bryn Forbes was an efficient shooter (TS% .631) but a defensive liability (DBPM -1.7). Milwaukee's top three players by Win Shares accounted for about 48% of the team total, and players with negative BPM played roughly 26% of minutes.
+
+**Brooklyn: three stars with limited availability.** Kevin Durant (PER 26.4, TS% .666, 31.2% usage), James Harden (PER 25.0, 28.4% usage, BPM 7.7 and .219 WS/48) and Kyrie Irving (PER 24.4, 30.4% usage, 7.4 WS) were each excellent per minute, but Durant played 35 games and Harden 36 with Brooklyn, versus 54 for Irving. As a result, none of them reached Antetokounmpo's Win Shares total. Brooklyn leaned on role players such as Joe Harris (TS% .663, 5.2 WS), DeAndre Jordan (TS% .736) and Jeff Green, but players with negative BPM absorbed about 43% of the team's minutes, against 26% for Milwaukee.
+
+**Takeaway.** Milwaukee's profile is top-heavy but deep and durable, with one MVP-level player and consistent supporting minutes. Brooklyn's profile is star-heavy per minute but thinner and less available, with more minutes going to below-average contributors. Note that Harden's row reflects only his Brooklyn games.
