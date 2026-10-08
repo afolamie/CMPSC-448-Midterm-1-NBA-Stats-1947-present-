@@ -1,0 +1,53 @@
+[
+  {
+    "prompt_id": "gemini_pilot_001",
+    "topic": "Stephen Curry vs. LeBron James (2015–16 Regular Season)",
+    "LLM_name": "Gemini",
+    "model_family": "Gemini",
+    "model_version": null,
+    "LLM_Input": null,
+    "LLM_output": "During the 2015–16 regular season, Stephen Curry demonstrated superior scoring efficiency and overall impact, while LeBron James led in playmaking and rebounding rates.\n\nCurry posted a remarkably efficient 66.9% TS%, outscoring James (58.8% TS%), driven by historic perimeter shooting. James recorded higher playmaking and rebounding rates with a 36.0% AST% and 11.8% TRB%, compared to Curry’s 33.7% AST% and 8.6% TRB%. Crucially, AST% and TRB% do not represent per-game averages; rather, they estimate the percentage of teammates' field goals assisted and available rebounds grabbed while a player is active on the court.\n\nDespite operating with nearly identical offensive usage (Curry’s 32.6% USG% vs. James’s 31.4% USG%), Curry surpassed James in overall estimated contribution, leading in both BPM (+11.9 to +9.0) and WS/48 (.318 to .242). It is important to note that BPM is not an actual on-court plus-minus metric measured directly from game play; instead, it is a box-score-based estimate of a player's net impact per 100 possessions relative to an average NBA player. Overall, the statistics reflect Curry’s unprecedented efficiency alongside James’s versatile playmaking and rebounding.",
+    "intended_prompt_reference": "Complete prompt 1 supplied in project chat on 2026-10-08 immediately before this collection.",
+    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "received_date": "2026-10-08",
+    "generation_date": null,
+    "collection_method": "User pasted responses and identified Gemini as their source.",
+    "word_count_whitespace": 177,
+    "status": "pilot_pending_input_confirmation",
+    "use_for_final_evaluation": false
+  },
+  {
+    "prompt_id": "gemini_pilot_002",
+    "topic": "Milwaukee Bucks vs. Brooklyn Nets (2020–21 Regular Season)",
+    "LLM_name": "Gemini",
+    "model_family": "Gemini",
+    "model_version": null,
+    "LLM_Input": null,
+    "LLM_output": "During the 2020–21 regular season, the top three workload leaders for Milwaukee (Khris Middleton, Giannis Antetokounmpo, Jrue Holiday) and Brooklyn (Joe Harris, Kyrie Irving, Jeff Green) displayed distinct distribution patterns across scoring efficiency, playmaking, and rebounding.\n\nMilwaukee’s trio featured broad responsibility across all three core contributors. Antetokounmpo led the set in usage (32.5% USG%), rebounding (17.5% TRB%), playmaking (28.7% AST%), scoring efficiency (63.3% TS%), and box-score impact (+9.0 BPM). Middleton (2269 minutes) and Holiday (1907 minutes) provided high complementary secondary creation (23.2% and 26.3% AST%) while remaining efficient (58.8% and 59.2% TS%) with positive BPMs (+1.3 and +3.4).\n\nConversely, Brooklyn’s profile relied heavily on central creation from Irving alongside low-usage off-ball efficiency from Harris and Green. Irving shouldered the highest offensive load for Brooklyn (30.4% USG%, 28.6% AST%, +5.5 BPM). Meanwhile, Harris (2141 minutes) and Green (1835 minutes) focused on low-usage play (16.2% and 15.6% USG%) and lower playmaking (8.4% and 7.8% AST%), yet delivered remarkable efficiency (66.3% and 62.4% TS%). Rebounding rates across Brooklyn's trio remained consistently low (6.4% to 7.9% TRB%).",
+    "intended_prompt_reference": "Complete prompt 2 supplied in project chat on 2026-10-08 immediately before this collection.",
+    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "received_date": "2026-10-08",
+    "generation_date": null,
+    "collection_method": "User pasted responses and identified Gemini as their source.",
+    "word_count_whitespace": 173,
+    "status": "pilot_pending_input_confirmation",
+    "use_for_final_evaluation": false
+  },
+  {
+    "prompt_id": "gemini_pilot_003",
+    "topic": "Michael Jordan & 1995–96 Chicago Bulls",
+    "LLM_name": "Gemini",
+    "model_family": "Gemini",
+    "model_version": null,
+    "LLM_Input": null,
+    "LLM_output": "During the 1995–96 regular season, Michael Jordan led the Chicago Bulls across workload and individual contribution metrics, logging a team-high 3090 minutes while maintaining a dominant 33.3% USG%, +10.5 BPM, and 20.4 WS.\n\nJordan’s 58.2% TS% highlights strong scoring efficiency relative to high usage, though Steve Kerr (66.3% TS% in 1919 minutes) and Toni Kukoč (58.9% TS% in 2103 minutes) achieved higher efficiency on considerably lower usage (12.9% and 21.4% USG%). Crucially, TS% and USG% measure efficiency and possession usage rather than scoring volume, as this dataset does not include points per game. Playmaking duties were shared, with Scottie Pippen leading in assist rate (25.2% AST% in 2825 minutes), followed closely by Jordan (21.2% AST%) and Kukoč (21.0% AST%). Extreme outlier figures, such as Jack Haley’s 49.6% USG% and -22.4 BPM, reflect small sample noise across 7 minutes.\n\nWhile Jordan's superior metrics demonstrate his individual productivity, these statistics reflect performance within the Bulls' specific system and roster environment; they cannot establish counterfactual team performance in his absence.",
+    "intended_prompt_reference": "Complete prompt 3 supplied in project chat on 2026-10-08 immediately before this collection.",
+    "input_status": "Responses supplied without a transcript of the actual submitted prompts. Intended prompt is known; exact submitted input and conversation context are unconfirmed.",
+    "received_date": "2026-10-08",
+    "generation_date": null,
+    "collection_method": "User pasted responses and identified Gemini as their source.",
+    "word_count_whitespace": 167,
+    "status": "pilot_pending_input_confirmation",
+    "use_for_final_evaluation": false
+  }
+]
