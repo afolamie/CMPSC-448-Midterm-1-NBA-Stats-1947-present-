@@ -4,7 +4,7 @@ The user pasted these three responses on October 8, 2026 and identified Gemini a
 
 ## Provenance and rubric status
 
-Model family is Gemini. Exact version, generation date, sampling settings, prior chat context, and an export of the submitted prompts were not supplied. The three intended complete questions are visible in the project conversation, but they are not evidence of the exact requests submitted to Gemini. LLM_Input remains null until that is confirmed; it must not be treated as a complete required input/output record yet.
+Model family is Gemini. On October 8, 2026, the user confirmed pasting all three complete prompts exactly as provided, including their statistics. LLM_Input now records those confirmed inputs. Exact model version, generation date, sampling settings, and prior chat context remain unknown; confirming prompt text does not establish fresh-chat conditions.
 
 The repository now has pilot outputs attributed to GPT, Claude, and Gemini, meeting the family count in principle. This does not establish a complete or sufficiently sized dataset. There are only three topics, the earlier inputs differ between families, and collection conditions are not aligned. CNN/RNN implementation and evaluation, RQ1 and RQ2 comparisons, results, analysis, lessons, and the PDF report are still outstanding. No grade or model performance is claimed.
 
@@ -22,6 +22,6 @@ The 150–200-word target is a project collection choice, not an explicit assign
 
 ## Next steps
 
-Confirm the exact full inputs, including tables, and record the Gemini version shown in the interface if available. Use identical prompts and consistent fresh-chat conditions across families, expanding to many independent examples. Preserve raw outputs even when they contain errors. Keep close prompt variants and responses to the same prompt in a single split. Do not feed model labels, metadata, topic headings added by the collector, or these review notes to the classifier.
+The full inputs are confirmed. Record the Gemini version shown in the interface if available. Use identical prompts and consistent fresh-chat conditions across families, expanding to many independent examples. Preserve raw outputs even when they contain errors. Keep close prompt variants and responses to the same prompt in a single split. Do not feed model labels, metadata, topic headings added by the collector, or these review notes to the classifier.
 
-These records are marked pilot_pending_input_confirmation and excluded from final evaluation for now because of input provenance and cross-family collection differences, not because their prose is imperfect.
+These records are marked pilot_input_confirmed. They remain outside final evaluation while the earlier ChatGPT/Claude inputs and collection conditions differ. This is a cross-family comparability issue, not a rejection of imperfect prose.
