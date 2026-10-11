@@ -32,7 +32,11 @@ def evaluate(kind, mode, train, val, test, epochs, seed, out):
     tf.keras.utils.set_random_seed(seed)
     enc = LabelEncoder().fit(train.LLM_name)
     ys = [enc.transform(df.LLM_name) for df in (train,val,test)]
-    xs = [np.array(make_text(df,mode)) for df in (train,val,test)]
+    # Use tf.string tensors; NumPy Unicode dtype strNNNN fails with Keras 3.
+    xs = [tf.constant(make_text(df, mode), dtype=tf.string) for df in (train, val, test)]
+    train_ds = tf.data.Dataset.from_tensor_slices((xs[0], ys[0])).shuffle(len(train), seed=seed).batch(32)
+    val_ds = tf.data.Dataset.from_tensor_slices((xs[1], ys[1])).batch(32)
+    test_ds = tf.data.Dataset.from_tensor_slices(xs[2]).batch(32)
     vectorize = tf.keras.layers.TextVectorization(max_tokens=20000,output_mode="int",output_sequence_length=300)
     vectorize.adapt(tf.data.Dataset.from_tensor_slices(xs[0]).batch(64))
     inp = tf.keras.Input(shape=(),dtype=tf.string)
@@ -44,9 +48,9 @@ def evaluate(kind, mode, train, val, test, epochs, seed, out):
     x = tf.keras.layers.Dropout(.35)(x)
     model = tf.keras.Model(inp,tf.keras.layers.Dense(len(enc.classes_),activation="softmax")(x))
     model.compile(optimizer="adam",loss="sparse_categorical_crossentropy",metrics=["accuracy"])
-    model.fit(xs[0],ys[0],validation_data=(xs[1],ys[1]),epochs=epochs,batch_size=32,verbose=2,
+    model.fit(train_ds,validation_data=val_ds,epochs=epochs,verbose=2,
               callbacks=[tf.keras.callbacks.EarlyStopping(patience=3,restore_best_weights=True,monitor="val_loss")])
-    pred = model.predict(xs[2],verbose=0).argmax(axis=1)
+    pred = model.predict(test_ds,verbose=0).argmax(axis=1)
     result = {"model":kind,"mode":mode,"accuracy":float(accuracy_score(ys[2],pred)),
               "macro_f1":float(f1_score(ys[2],pred,average="macro",zero_division=0)),
               "classes":enc.classes_.tolist(),
@@ -62,7 +66,7 @@ def evaluate(kind, mode, train, val, test, epochs, seed, out):
 
 if __name__ == "__main__":
     p=argparse.ArgumentParser()
-    p.add_argument("--data-dir",default="data/splits")
+    p.add_argument("--data-dir",default="generated/splits")
     p.add_argument("--output",default="results")
     p.add_argument("--epochs",type=int,default=12)
     p.add_argument("--seed",type=int,default=448)
