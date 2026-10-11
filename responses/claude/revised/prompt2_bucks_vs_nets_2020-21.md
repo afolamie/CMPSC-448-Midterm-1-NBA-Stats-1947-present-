@@ -1,0 +1,5 @@
+Among the six highest-minute players supplied, profiles differ most in usage and playmaking. Milwaukee's three have usage rates of 25.0% (Middleton), 32.5% (Antetokounmpo) and 22.2% (Holiday), with AST% between 23.2% and 28.7%. Antetokounmpo stands out with a 17.5% TRB%, 63.3% TS% and +9.0 BPM across 2,013 minutes.
+
+Brooklyn's group is more uneven. Irving's usage is 30.4% with a 28.6% AST% and +5.5 BPM in 1,886 minutes, similar in volume to Antetokounmpo but with a TRB% of only 7.5%. Harris (2,141 minutes) and Green (1,835) have usage of 16.2% and 15.6%, AST% of 8.4% and 7.8%, and BPM of +0.4 and -0.8, though Harris's 66.3% TS% is the highest of the six.
+
+So Milwaukee's three pair moderate-to-high usage with stronger passing rates, while two of Brooklyn's three are low-usage, low-AST% players. AST% and TRB% are estimated rates, not per-game averages, and BPM is a box-score estimate, not actual on-court plus-minus. These six players are not complete rosters, so no team-level conclusion follows.
