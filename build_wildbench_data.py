@@ -62,7 +62,7 @@ def build():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", default="data/llm_responses.csv")
+    parser.add_argument("--output", default="generated/llm_responses.csv")
     args = parser.parse_args()
     data = build()
     path = Path(args.output)
