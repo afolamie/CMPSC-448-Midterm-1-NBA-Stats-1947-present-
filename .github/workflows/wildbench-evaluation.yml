@@ -25,7 +25,7 @@ jobs:
       - name: Download matched GPT Claude Gemini WildBench responses
         run: python build_wildbench_data.py --output generated/llm_responses.csv
       - name: Split by prompt
-        run: python prepare_test_data.py --input generated/llm_responses.csv
+        run: python prepare_test_data.py --input generated/llm_responses.csv --output generated/splits
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Train CNN and LSTM and evaluate
