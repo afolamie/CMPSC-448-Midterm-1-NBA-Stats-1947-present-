@@ -1,4 +1,30 @@
-# Claude pilot responses
+# Claude responses
+
+## Current collection: revised responses
+
+Use [revised.json](revised.json) for the latest three Claude responses and their complete inputs. The unedited uploaded texts are in [revised/](revised/). They supersede the earlier batch for these topics; do not count both batches as independent examples.
+
+The user supplied the revised files on October 8, 2026 and stated that they used the correct questions. These inputs are recorded from the complete questions supplied in the conversation and match the confirmed Gemini input strings. Imported on October 11, 2026. Exact model version, generation date, sampling settings, and fresh-chat conditions remain unknown. Prior context may still differ across services.
+
+The required LLM_name, LLM_Input, and LLM_output fields are populated. Response text is preserved rather than edited to improve its factual accuracy.
+
+| Question | Words | Review |
+| --- | ---: | --- |
+| Curry/James | 171 | Covers the supplied efficiency, usage, assist, rebound, BPM, and WS/48 comparisons; explains rate statistics and BPM. The 8.1 difference is percentage points. Higher USG% establishes a greater estimated share, not necessarily more total possessions used. |
+| Bucks/Nets | 161 | Uses the correct three players per team, recognizes Harris's highest TS%, and explicitly limits roster conclusions. “Six highest-minute players” should mean top three separately per team, not the six highest across both rosters. “Similar in volume” should be limited to usage rates; total scoring or possession volume is unavailable. Some supplied efficiency and minute comparisons are omitted. |
+| Jordan/Bulls | 151 | Compares efficiency, usage, AST%, BPM and WS, notes Haley's seven minutes, and addresses the counterfactual limitation. “Heaviest usage” needs qualification to substantial-minute players, because Haley has 49.6%. Small samples warrant caution rather than no interpretation at all. Opponents would not necessarily change in a counterfactual without Jordan. |
+
+All quoted numerical values are consistent with the source tables previously checked against Advanced.csv. The 150–200-word target is met, but it is a collection choice, not a rubric requirement. The classification task concerns model identity; imperfect interpretations should remain in original outputs and can be discussed in error analysis.
+
+## Project status
+
+There are pilot responses from three families, but only three independent topics. Claude and Gemini now have the same recorded complete input text. The earlier ChatGPT pilot used different formatting/instructions and existing conversational context. A matched ChatGPT collection and a substantially larger dataset are still needed for credible evaluation.
+
+These revised records remain pilot_input_confirmed with use_for_final_evaluation=false while the final dataset and collection protocol are assembled. CNN/RNN implementation, RQ1/RQ2 experiments, results, deeper analyses, lessons, and the PDF report are separate outstanding requirements. Keep all responses and close variants of a prompt in the same split; exclude labels and review notes from classifier inputs.
+
+## Earlier collection (superseded)
+
+The original Markdown files and [pilot.json](pilot.json) are retained as the earlier unmatched-input batch. The review below applies only to those originals, not revised.json.
 
 ## Provenance
 
