@@ -15,28 +15,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Download matched GPT Claude Gemini WildBench responses
-        run: python build_wildbench_data.py --output data/llm_responses.csv
+        run: python build_wildbench_data.py --output generated/llm_responses.csv
       - name: Split by prompt
-        run: python prepare_test_data.py --input data/llm_responses.csv
+        run: python prepare_test_data.py --input generated/llm_responses.csv
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Train CNN and LSTM and evaluate
-        run: python evaluate_models.py --data-dir data/splits --output results --epochs 8
+        run: python evaluate_models.py --data-dir generated/splits --output results --epochs 8
       - name: Upload dataset, splits and result metrics
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: cmpsc448-test-results
           if-no-files-found: warn
           path: |
-            data/llm_responses.csv
-            data/splits/
+            generated/llm_responses.csv
+            generated/splits/
             results/
